@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".newtask"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/givetaskname"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Give Task Name"
+
+        android:inputType="textPersonName"
+        android:textColor="#AA00FF"
+        android:textColorHint="#000000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/givedescription"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/givetaskname"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Give Task Description"
+        android:inputType="textMultiLine"
+        android:textColor="#AA00FF"
+        android:textColorHint="#000000"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/datelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/givedescription"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/setdatetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Date:"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            />
+        <Button
+            android:id="@+id/setdate"
+            android:backgroundTint="#64DD17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Set"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/starttimelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/datelayout"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/setstarttimetext"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Start Time:"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            />
+        <Button
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#00BFA5"
+            android:id="@+id/setstarttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Set"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/endtimelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/starttimelayout"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/setendtimetext"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set End Time:"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            />
+        <Button
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#00BFA5"
+            android:id="@+id/setendtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Set"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#C51162"/>
+
+</RelativeLayout>
